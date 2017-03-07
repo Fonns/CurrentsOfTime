@@ -2,10 +2,14 @@ body{
 	background-color:gainsboro;
 }
 
-h2{
+#header{
 	margin-top: 50px;
+	text-align:center;
+	margin: auto;
+}
+
+h2{
 	color:black;
-	text-align: center;
 }
 
 #menu{
@@ -18,7 +22,7 @@ h2{
 }
 
 ul{
-	margin-right:20px;
+	margin-right:18px;
 }
 
 li{
@@ -27,4 +31,8 @@ li{
 	font-size:120%;
 	display: inline-block;
 	color:gainsboro;
+}
+
+li:hover{
+	background-color:darkgrey;
 }
