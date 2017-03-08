@@ -61,3 +61,10 @@ li a:hover{
 	height:100px;
 	background-color:grey;
 }
+
+footer{
+	text-align:center;
+	font-size:75%;
+	padding-top: 80px;
+	color: gainsboro;
+}
