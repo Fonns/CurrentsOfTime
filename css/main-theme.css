@@ -54,3 +54,11 @@ img{
 	display: block;
 	width: 500px;
 }
+
+a{
+	font-size: 30px;
+	color: gold;
+	padding:25px;
+  	display: inline-block;
+  	vertical-align: middle;
+}
