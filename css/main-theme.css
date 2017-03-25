@@ -1,6 +1,6 @@
 body{
 	margin:auto;
-	background: url("../img/olympus.jpg");
+	background: url("../img/newBackGround.jpg");
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -24,7 +24,7 @@ body{
 	width: 75%;
 	height: 5000px;
 	position: relative;
-	top:150px;
+	top:515px;
 	background-color: black;
 	border: double;
 	border-color: silver;
