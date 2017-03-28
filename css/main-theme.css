@@ -2,7 +2,6 @@ body{
 	margin:auto;
 	background: url("../img/olympus.jpg");
 	background-size:cover;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
 }
@@ -10,10 +9,8 @@ body{
 .menu{
 	margin: auto;
 	width: 1000px;
-	margin-top: 100px;
     height: 50px;
-	border: double;
-	border-color: gold;
+	border: 3px double gold;
 	background-color: rgba(0,0,0,0.5);
     text-align: center;
 }
@@ -23,15 +20,14 @@ body{
 	width: 1200px;
 	height: 400px;
 	position: relative;
-	top:510px;
 	background-color: rgba(0,0,0,0.5);
-	border: 3px double silver;
+	border: 3px double gold;
 }
 
 .left-info{
 	width: 573px;
 	height: 326px;
-	border: 3px double silver;
+	border: 3px double gold;
 	color: white;
 	background-color: rgba(0,0,0,0.5);
 	float: left;
@@ -41,22 +37,22 @@ body{
 .right-info{
 	width: 573px;
 	height: auto;
-	border: 3px double silver;
+	border: 3px double gold;
 	color: white;
 	background-color: rgba(0,0,0,0.5);
 	float: left;
 	margin: 10px;
 }
 
-img{
+.logo-home-top{
     margin: auto;
 	position:relative;
-	top:50px;
+	top:35px;
 	display: block;
-	width: 400px;
+	width: 300px;
 }
 
-a{
+.menu-link{
     text-decoration: none;
     font-size: 30px;
     padding-top: 7px;
