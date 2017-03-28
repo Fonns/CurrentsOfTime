@@ -60,3 +60,11 @@ body{
 	color: gold;
 	display:inline-block;
 }
+
+.forum-main{
+	margin: auto;
+	width: 1200px;
+	position: relative;
+	background-color: rgba(0,0,0,0.5);
+	border: 3px double gold;
+}
