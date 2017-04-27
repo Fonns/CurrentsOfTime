@@ -1,6 +1,6 @@
 body{
 	margin:auto;
-	background: url("../img/olympus.jpg");
+	background: url("../img/background.jpg");
 	background-size:cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -8,12 +8,11 @@ body{
 }
 
 .menu{
-     width:715px; 
-       height:84px; 
-	background-image: url("../img/navigation_bar.png");
-
+	width:1658px;
+    height: 1656px;
+    background-image: url("../img/scroll.png");
     margin: auto;
-	text-align: center;
+    text-align: center;
     position:relative;
     z-index: 0;
     
@@ -21,41 +20,28 @@ body{
 
 .main-container{
 	margin: auto;
-	width: 1200px;
+	width: 1000px;
 	height: 400px;
 	position: relative;
-	background-color: rgba(0,0,0,0.6);
-	border: 3px double silver;
 }
 
 .left-info{
 	width: 573px;
 	height: 326px;
-	border: 3px double silver;
-	color: ghostwhite;
-	background-color: rgba(0,0,0,0.5);
-	float: left;
-    margin-top: 35px;
-	margin-left: 63px;
-}
+	color: black;
+	text-align: center;
+    margin:auto;}
 
 .right-info{
 	width: auto;
 	height: auto;
-	border: 3px double silver;
-	color: ghostwhite;
-	background-color: rgba(0,0,0,0.5);
-	float: left;
-	margin: 35px;
-}
+    margin: auto;}
 
 .main-game-container{
 	margin: auto;
 	width: 1200px;
 	height: 1200px;
-	position: relative;
-	background-color: rgba(0,0,0,0.6);
-	border: 3px double silver;
+	position: absolute;
 }
 
 .logo-home-top{
@@ -63,61 +49,65 @@ body{
 	position:relative;
 	top:35px;
 	display: block;
-	width: 300px;
+	width: 400px;
 }
 
 
 .menu-link{
 	text-decoration: none;
-	font-size: 30px;
-    padding-left: 20px;
-    padding-right: 40px;
-	color: ghostwhite;
+	font-size: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+	color: black;
     z-index: 1;
     position:relative;
+
     
 }
 
 .active{
-    background-color:rgba(205,92,92,0.5);
-    color:ghostwhite;
+    color:crimson;
     text-decoration: none;
-    margin-top: 10px;
-    padding-top:15px;
-    padding-left: 20px;
-    padding-right: 30px;
-    
-    font-size: 30px;
+    margin-top:150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    font-size: 35px;
 
 	display:inline-block;
 }
 
 
 .menu-link:hover {
-    color:indianred;
+    color:ghostwhite;
 }
 
 .login{
 	margin: auto;
-	width: 250px;
+	width: 500px;
 	height: auto;
 	position: relative;
-	background-color: rgba(0,0,0,0.6);
-	border: 3px double silver;
     font-size: 20px;
 	padding-top: 45px;
 	padding-left: 50px;
-	color: ghostwhite;
+	color: black;
     
 }
 
 .forum-main{
-	margin: auto;
-	width: 1200px;
+	text-align: left;
+    margin-left: 25%;
+	width: 800px;
 	position: relative;
-	background-color: rgba(0,0,0,0.6);
-	border: 3px double silver;
+    float: left;
     font-size: px;
 	padding:10px;
-	color: ghostwhite;
+	color: black;
+}
+
+hr{
+    border-color:darkgray;
+    border-style:groove;
 }
