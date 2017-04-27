@@ -8,14 +8,16 @@ body{
 }
 
 .menu{
-	width:1658px;
     height: 1656px;
     background-image: url("../img/scroll.png");
+    background-size: cover;
     margin: auto;
+    background-position: center;
     text-align: center;
     position:relative;
     z-index: 0;
     
+
 }
 
 .main-container{
@@ -29,7 +31,6 @@ body{
 	width: 573px;
 	height: 326px;
 	color: black;
-	text-align: center;
     margin:auto;}
 
 .right-info{
