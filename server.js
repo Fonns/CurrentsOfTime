@@ -23,6 +23,11 @@ app.get('/login', function(req, res){
 	console.log('\nAccess to sign in.');
 })
 
+app.get('/profile', function(req, res){
+	res.sendFile(__dirname + "/html/profile.html");
+	console.log('\nAccess to profile.');
+})
+
 var server = app.listen(8081, function(){
 	var host = server.address().address;
 	var port = server.address().port
