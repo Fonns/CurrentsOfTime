@@ -2,9 +2,9 @@ var fs = require('fs');
 var mysql = require('mysql');
 var connection = mysql.createConnection({
 	host : 'localhost',
-	port: "3309",
+	port: "3308",
 	user: 'root',
-	password: 'Euusooreddit1!',
+	password: 'euusooreddit1!',
 	database: 'dbuser'
 });
 
@@ -19,14 +19,15 @@ connection.connect(function(err){
 
 exports.register = function(req,res){
 
-	var user={
-		"username":req.body.username,
-		"password":req.body.password,
-		"email":req.body.email
-	}
-
 	var query = "SELECT username FROM user where username like " + connection.escape(req.body.username) + ";";
 	connection.query(query, function (error, results, fields) {
+
+		var user={
+			"username":req.body.username,
+			"password":req.body.password,
+			"email":req.body.email
+		}
+
 		if (error) {
 			console.log(error);
 		}
@@ -38,7 +39,7 @@ exports.register = function(req,res){
 				}else{
 					console.log('New registered user:' + req.body.username);
 				};
-			}
+			
 		});
 		}
 		else{
