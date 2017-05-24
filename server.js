@@ -1,7 +1,12 @@
 var express = require('express');
 var app = express();
+var bodyparser = require('body-parser');
+var svFunction = require(__dirname + "/server/functions.js");
 
 app.use(express.static(__dirname + '/html/files'));
+
+app.use(bodyparser.urlencoded({ extended: false }));
+app.use(bodyparser.json());
 
 app.get('/', function(req, res){
 	res.sendFile(__dirname + "/html/index.html");
@@ -21,6 +26,10 @@ app.get('/games', function(req, res){
 app.get('/login', function(req, res){
 	res.sendFile(__dirname + "/html/sign.html");
 	console.log('\nAccess to sign in.');
+})
+
+app.post('/login', function(req, res){
+	svFunction.register(req, res);
 })
 
 app.get('/profile', function(req, res){

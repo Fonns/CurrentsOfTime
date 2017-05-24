@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Currents of Time</title>
-	<link rel="stylesheet" href="../css/main-theme.css">
-	<link rel="shortcut icon" href="../img/Time.ico">
+    <title>Currents of Time</title>
+    <link rel="stylesheet" href="../css/main-theme.css">
+    <link rel="shortcut icon" href="../img/Time.ico">
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-    
     <img class="logo-home-top" src="../img/logo.png">
-
-	<div class="menu">
-		<a class="menu-link" href="/">About</a>
-		<a class="menu-link" href="forum">Forum</a>
-		<a class="menu-link" href="games">Games</a>
+    <div class="menu">
+        <a class="menu-link" href="/">About</a>
+        <a class="menu-link" href="forum">Forum</a>
+        <a class="menu-link" href="games">Games</a>
         <a class="active" href="login">Sign In</a>
-
-    	<br><br>
-	<br><br>
-      	<br><br>
-	<br><br>
         
-    <div class="login">    <form>
-    Username<br>
-    <input type="text"><br><br>
-    Password<br>
-    <input type="password">
-    <br><br>
-    <input type="submit" value="Login">
-    <br><br>
-    <a style="font-size:15px; color:green;" href="404">Forgot?</a>
-    
-    
-    	
-    <br><br>
-	<br><br>
-    <p style="font-size:25px;">Not registered? Create an account!</p>
-    <br><br>
-  
-        
-    <form>
-    Username<br>
-    <input type="text"><br><br>
-    Email Address<br>
-    <input type="email"><br><br>
-    Password<br>
-    <input type="password"><br><br>
-    Confirm Password<br>
-    <input type="password">
-    <br><br>
-    <input type="submit" value="Create Account">
-    <br><br><br>
-    </form>
-    
-    
-        </form>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <div class="login">
+            <form>
+                Username<br>
+                <input type="text"><br><br>
+                Password<br>
+                <input type="password">
+                <br><br>
+                <input type="submit" value="Login">
+            </form>
+            <br><br>
+            <a style="font-size:15px; color:green;" href="404">Forgot?</a>
+            <br><br>
+            <br><br>
+            <p style="font-size:25px;">Not registered? Create an account!</p>
+            <br><br>
+            <form name="formReg">
+                Username<br>
+                <input type="text" name="username"><br><br>
+                Email Address<br>
+                <input type="email" name="email"><br><br>
+                Password<br>
+                <input type="password" name="password"><br><br>
+                <br><br>
+                <input type="button" value="Create Account" onclick="sendForm()">
+            </form>
+            <br><br><br>
         </div>
     </div>
 </body>
