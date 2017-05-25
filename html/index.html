@@ -4,6 +4,12 @@
 	<title>Currents of Time</title>
 	<link rel="stylesheet" href="../css/main-theme.css">
 	<link rel="shortcut icon" href="../img/Time.ico">
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+      <script src="../js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
 </head>
 <body>
     <img class="logo-home-top" src="../img/logo.png">
@@ -11,23 +17,78 @@
         <a class="active" href="/">About</a>
 		<a class="menu-link" href="forum">Forum</a>
 		<a class="menu-link" href="games">Games</a>
-        <a class="menu-link" href="login">Sign In</a>
-    
-	<br><br>
-	<br><br>
+        <a class="menu-link" onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer; width:auto;">Login</a>  
 
         <div class="main-container">
 		<div class="left-info" style="margin-top:100px;">
-			<h2 style="text-align:center;">The Prophecy Will Be Fulfilled</h2>
-			<p style="margin-left: 2%; margin-right: 2%; font-size:20px">When Cronos learned of the prophecy that one of his children would supplant him as ruler of the world, he attemped to imprision the Gods of Olympus in Tartarus, a dungeon of torment and suffering. However, Zeus avoided that fate and went into exile.<br><br>You play as Kairos, a Greek mercenary who has secretly been given the Scythe of Time by a mysterious woman. Your adventure begins with the quest to find Zeus - the only one who will have the power to permanently defeat Cronos and fullfill the prophecy.</p>
+			<h2 style="text-align: center; font-size:35px;">The Prophecy Will Be Fulfilled</h2>
+			<p style="margin-left: 2%; margin-right: 2%; font-size:19px; text-align: justify;">When Cronos learned of the prophecy that one of his children would supplant him as ruler of the world, he attemped to imprision the Gods of Olympus in Tartarus, a dungeon of torment and suffering. However, Zeus avoided that fate and went into exile.<br><br>You play as Kairos, a Greek mercenary who has secretly been given the Scythe of Time by a mysterious woman. Your adventure begins with the quest to find Zeus - the only one who will have the power to permanently defeat Cronos and fullfill the prophecy.</p>
 		</div>
 		<div class="right-info">
 <iframe style="box-shadow: 5px 5px 5px #888888" width="560" height="315" src="https://www.youtube.com/embed/NpEaa2P7qZI" frameborder="0" allowfullscreen></iframe>	</div>
 
 	</div>
     </div>
-	<br><br>
-	<br><br>
 	
+    
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+  <form class="modal-content animate">
+    <div class="container" style="padding-top:170px;">
+      <label>Username</label><br>
+      <input type="text" name="user" required><br><br>
+
+      <label>Password</label><br>
+      <input type="password" name="pass" required><br><br>
+      <div class="clearfix">
+    <table>
+         <td>
+             <button type="submit" onclick="window.location='login'" class="signupbtn">Login</button>
+             <a style="padding-top:50px;"></a></td>
+            <td> <a style="padding-left: 10px">Don't have an account?</a>
+                 <a onclick="document.getElementById('id02').style.display='block'" style="cursor: pointer; width:auto;"> Register now!</a></td></table>
+      
+
+      </div>
+    </div>
+  </form>
+</div>
+    
+    <div id="id02" class="modal2">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span>
+  <form class="modal-content animate" name="formReg">
+    <div class="container" style="padding-top:100px;">
+      <label>Username</label><br>
+      <input type="text" name="username" required><br><br>
+      <label>Email</label><br>
+      <input type="email" name="email" required><br><br>
+      <label>Password</label><br>
+      <input type="password" name="password" required><br><br>
+      <div class="clearfix">
+    <button type="submit" class="signupbtn" onclick="sendForm()">Register</button>
+         
+
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+var modal2 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal || event.target == modal2) {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+
+    }
+}
+
+
+</script>
 </body>
 </html>

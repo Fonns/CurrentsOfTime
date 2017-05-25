@@ -23,17 +23,12 @@ app.get('/games', function(req, res){
 	console.log('\nAccess to mini games.');
 })
 
-app.get('/login', function(req, res){
-	res.sendFile(__dirname + "/html/sign.html");
-	console.log('\nAccess to sign in.');
-})
-
 app.post('/login', function(req, res){
 	svFunction.register(req, res);
 })
 
 app.get('/profile', function(req, res){
-	res.sendFile(__dirname + "/html/profile.html");
+	res.sendFile(__dirname + "/html/sign.html");
 	console.log('\nAccess to profile.');
 })
 

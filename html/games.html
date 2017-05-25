@@ -4,6 +4,10 @@
 	<title>Currents of Time</title>
 	<link rel="stylesheet" href="../css/main-theme.css">
 	<link rel="shortcut icon" href="../img/Time.ico">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC" rel="stylesheet">
+  <script src="../js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </head>
 <body>
     <img class="logo-home-top" src="../img/logo.png">
@@ -11,7 +15,7 @@
 		<a class="menu-link" href="/">About</a>
 		<a class="menu-link" href="forum">Forum</a>
 		<a class="active" href="games">Games</a>
-        <a class="menu-link" href="login">Sign In</a>
+        <a class="menu-link" onclick="document.getElementById('id01').style.display='block'" style="cursor: pointer; width:auto;">Login</a>  
 	
     <br><br>
 	<br><br>
@@ -59,5 +63,63 @@
     </div>
 	<br><br>
 	<br><br>
+   <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"></span>
+  <form class="modal-content animate">
+    <div class="container" style="padding-top:170px;">
+      <label>Username</label><br>
+      <input type="text" name="user" required><br><br>
+
+      <label>Password</label><br>
+      <input type="password" name="pass" required><br><br>
+      <div class="clearfix">
+    <table>
+         <td>
+             <button type="submit" onclick="window.location='login'" class="signupbtn">Login</button>
+             <a style="padding-top:50px;"></a></td>
+            <td> <a style="padding-left: 10px">Don't have an account?</a>
+                 <a onclick="document.getElementById('id02').style.display='block'" style="cursor: pointer; width:auto;"> Register now!</a></td></table>
+      
+
+      </div>
+    </div>
+  </form>
+</div>
+    
+    <div id="id02" class="modal2">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal"></span>
+  <form class="modal-content animate" name="formReg">
+    <div class="container" style="padding-top:100px;">
+      <label>Username</label><br>
+      <input type="text" name="username" required><br><br>
+      <label>Email</label><br>
+      <input type="email" name="email" required><br><br>
+      <label>Password</label><br>
+      <input type="password" name="password" required><br><br>
+      <div class="clearfix">
+    <button type="submit" class="signupbtn" onclick="sendForm()">Register</button>
+         
+
+      </div>
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+var modal2 = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal || event.target == modal2) {
+        modal.style.display = "none";
+        modal2.style.display = "none";
+
+    }
+}
+
+
+</script>
 </body>
 </html>
