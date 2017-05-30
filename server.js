@@ -3,6 +3,11 @@ var app = express();
 var bodyparser = require('body-parser');
 var svFunction = require(__dirname + "/server/functions.js");
 
+var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
+app.engine('handlebars', handlebars.engine);
+app.set('view engine', 'handlebars');
+
+
 app.use(express.static(__dirname + '/html/files'));
 
 app.use(bodyparser.urlencoded({ extended: false }));
@@ -27,7 +32,7 @@ app.post('/login', function(req, res){
 	svFunction.register(req, res);
 })
 
-app.get('/profile', function(req, res){
+app.get('/login', function(req, res){
 	res.sendFile(__dirname + "/html/sign.html");
 	console.log('\nAccess to profile.');
 })
