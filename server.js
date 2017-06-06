@@ -3,7 +3,7 @@ var app = express();
 var bodyparser = require('body-parser');
 var svFunction = require(__dirname + "/server/functions.js");
 
-var handlebars = require('express3-handlebars').create({defaultLayout:'main'});
+var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
@@ -14,7 +14,7 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 
 app.get('/', function(req, res){
-	res.sendFile(__dirname + "/html/index.html");
+	res.render('index');
 	console.log('\nAccess to home page.');
 })
 
