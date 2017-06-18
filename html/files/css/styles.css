@@ -1,0 +1,38 @@
+body{
+	background: url("../img/background.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.footer{
+	border: 3px solid black;
+}
+
+.header-logo{
+	margin: auto;
+	position:relative;
+	top:25px;
+	display: block;
+	width: 300px;
+}
+
+.nav{
+	font-family: 'IM Fell DW Pica SC', serif;
+	text-align: center;
+	width: 50%;
+	border: 3px solid black;
+}
+
+.nav-li{
+	float: left;
+	margin: 50px;
+}
+
+.nav-link{
+	font-size: 25px;
+	color: black;
+	list-style-type: none;
+	float: left;
+}

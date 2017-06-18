@@ -19,22 +19,17 @@ app.get('/', function(req, res){
 })
 
 app.get('/forum', function(req, res){
-	res.sendFile(__dirname + "/html/forum.html");
+	res.render('forum');
 	console.log('\nAccess to forum.');
 })
 
 app.get('/games', function(req, res){
-	res.sendFile(__dirname + "/html/games.html");
+	res.render('games');
 	console.log('\nAccess to mini games.');
 })
 
 app.post('/login', function(req, res){
 	svFunction.register(req, res);
-})
-
-app.get('/login', function(req, res){
-	res.sendFile(__dirname + "/html/sign.html");
-	console.log('\nAccess to profile.');
 })
 
 var server = app.listen(8081, function(){
