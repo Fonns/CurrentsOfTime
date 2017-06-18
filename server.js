@@ -23,6 +23,11 @@ app.get('/forum', function(req, res){
 	console.log('\nAccess to forum.');
 })
 
+app.get('/profile', function(req, res){
+	res.render('profile');
+	console.log('\nAccess to profile.');
+})
+
 app.get('/games', function(req, res){
 	res.render('games');
 	console.log('\nAccess to mini games.');
