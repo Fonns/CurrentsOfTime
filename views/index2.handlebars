@@ -1,0 +1,105 @@
+<div class="bgimg-1">
+  <div class="caption">
+    <img class="header-logo" src="../img/logo.png">
+  </div>
+</div>
+
+<div class="info">
+  When Cronos learned of the prophecy that one of his children would supplant him as ruler of the world, he attemped to imprision the Gods of Olympus in Tartarus, a dungeon of torment and suffering. However, Zeus avoided that fate and went into exile. You play as Kairos, a Greek mercenary who has secretly been given the Scythe of Time by a mysterious woman. Your adventure begins with the quest to find Zeus - the only one who will have the power to permanently defeat Cronos and fullfill the prophecy.
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">FIGHT MYTHICAL CREATURES</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="info">
+    <p>In this journey you will be attacked by all manner of creatures. From beasts cursed with an unquenchable hunger, to gods of ancient and ferocious magic.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">EXPLORE ANCIENT LOCATIONS</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div class="info">
+<p>Explore the kingdoms of ancient Greece and find them scarred by Crono’s rage. From the sunken City of Atlantis, to the corrupted Mount Olympus.</p>
+
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">THE PROPHECY WILL BE FULFILLED</span>
+  </div>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form action="/login" class="modal-content animate" form="formLog" method="post">
+
+    <div class="container">
+      <h2 style="text-align:center; font-family: 'IM Fell DW Pica SC', serif; color: #ffc000;">L O G I N</h2>
+      <label><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <br>
+        
+      <label><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="password" required>
+        
+      <br>
+        
+      <button type="submit" onclick="sendLogin()">Login</button>
+      <a onclick="document.getElementById('id02').style.display='block'" style="margin-top:10px;float: right; padding-top: 16px; color:ghostwhite; text-decoration: none; cursor:pointer;">Register Now!</a>
+        
+    </div>
+  </form>
+</div>
+    
+<div id="id02" class="modal2">
+  
+  <form action="/register" class="modal2-content animate" form="formReg" method="post">
+
+    <div class="container">
+      <h2 style="text-align:center; font-family: 'IM Fell DW Pica SC', serif; color: #ffc000;">R E G I S T E R</h2>
+      <label><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="username" required>
+
+      <br>
+        
+      <label><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="password" required>
+        
+      <br>
+        
+      <label><b>Email</b></label><br>
+      <input type="email" placeholder="Enter Email" name="email" required>
+                
+      <br>
+
+      <button type="submit" onclick="sendForm()">Register</button>
+
+    </div>
+  </form>
+</div>
+    
+    
+<script>
+var modal = document.getElementById('id01');
+var modal2 = document.getElementById('id02');
+
+
+window.onclick = function(event) {
+    if (event.target == modal || event.target == modal2) {
+        modal.style.display = "block";
+        modal2.style.display = "none";
+
+    }
+}
+    </script>

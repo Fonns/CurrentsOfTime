@@ -10,22 +10,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-	<header>
-	</header>
-	<br><br>
-	<div class="nav">
-		<ul class="nav-link">
-			<li class="nav-li">Home</li>
-			<li class="nav-li">Forum</li>
-			<li class="nav-li">Games</li>
-			<li class="nav-li">Login</li>
-		</ul>
+	<header style="z-index:1;">
+<div class="nav" style="position:fixed;">
+            <ul class="nav-link">
+  <li><a href="/">Home</a></li>
+  <li class="dropdown">
+    <a href="games" class="dropbtn">Games</a>
+    <div class="dropdown-content">
+      <a href="#">Atlantis</a>
+      <a href="#">Olympus</a>
+      <a href="">Tartarus</a>
+    </div>
+  </li>
+ <li style="float:right;"><a class="menu-link" href="profile">Profile</a>  </li>
+
+</ul>
 	</div>
-	<br><br>
+	</header>
 	{{{body}}}
 	<br><br>
-	<footer class="footer">
-		All trademarks and copyrights on this site are owned by their respective owners.
-	</footer>
-</body>
+  <footer class="foot">All trademarks and copyrights on this site are owned by their respective owners.
+    </footer>
+    
+
+
+
+    </body>
+    
+    
 </html>
