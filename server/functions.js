@@ -63,7 +63,7 @@ exports.login = function(req,res){
 			console.log("User found");
 			if(correctPass){
 				console.log("logedin");
-				res.redirect('/profile');
+				res.redirect('/');
 			} else {
 				console.log("wrong password");
 				res.send({message: "Wrong password"});
